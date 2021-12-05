@@ -2,4 +2,5 @@ nimfa~=1.4.0
 numpy~=1.21.2
 matplotlib~=3.4.3
 scipy~=1.7.1
-scikit-learn~=1.0
+opencv-python~=4.5.4.58
+Pillow~=8.3.2
