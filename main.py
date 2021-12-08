@@ -2,6 +2,7 @@ import PIL.Image
 import numpy
 import numpy as np
 from matplotlib import pyplot as plt
+from sklearn.preprocessing import normalize
 
 import sys
 import nimfa
@@ -139,3 +140,5 @@ with open("W.txt", "w") as fout:
     print(bmf_fit.fit.W, file=fout)
 displayMatrix(255 - bmf_fit.fit.W * 255)
 displayMatrix(255 - bmf_fit.fit.H * 255)
+displayMatrix(255 - bmf_fit.fit.W / bmf_fit.fit.W.max() * 255)
+displayMatrix(255 - bmf_fit.fit.H / bmf_fit.fit.H.max() * 255)
